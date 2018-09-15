@@ -10,7 +10,7 @@ CREATE TABLE students
 
 
 def highest_student_gpa
-  @db.execute("SELECT MIN(gpa) FROM students;")
+  'SELECT MAX(gpa) FROM students;'
 end
 
 def lowest_student_gpa
